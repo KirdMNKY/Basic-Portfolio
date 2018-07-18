@@ -1,0 +1,45 @@
+body {
+    background-image: url(/assets/images/qbkls.png);
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    border: #cccccc;
+    border-width: 5px;
+}
+
+nav {
+    float: right;
+}
+
+footer {
+
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+#logo {
+    float: left;
+    background-color: #4aaaa5;
+    color: white;
+    width: 100px;
+    height: 20px;
+    padding: 40px;
+    position: relative;
+    left: 50px;
+}
+
+#container {
+    clear:both;
+}
+
+#myPic {
+    width: 150px;
+    float: left;
+    margin: 10px;
+}
