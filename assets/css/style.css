@@ -1,32 +1,64 @@
 body {
-    background-image: url(/assets/images/qbkls.png);
+    background-image: url(../images/qbkls.png);
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    border: #cccccc;
-    border-width: 5px;
+    border-width: 0px;
+    border-style: solid;
+    border-bottom-width: 5px;
+    border-color: #cccccc;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    /* margin: 0 auto; */
 }
 
 nav {
     float: right;
     padding-top: 20px;
+    margin-right: 10px;
 }
 
 footer {
-
+    background-color: #666666;
+    text-align: center;
+    height: 20px;
+    border-style: solid;
+    border-width:0px;
+    border-top-width: 10px;
+    border-color: #4aaaa5;
+    padding-top: 40px;
+    color: white;
+    position: sticky;
+    bottom: 0%;
+    right: 0%;
 }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-
+    color:#4aaaa5;
 }
 
 section {
     padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+textarea {
+    width: 340px;
+    height: 140px;
+}
+
+button {
+    
+}
 
 #logo {
     float: left;
@@ -44,6 +76,8 @@ section {
 
 #container {
     clear:both;
+    width: 960px;
+    margin: 0 auto;
 }
 
 #myPic {
