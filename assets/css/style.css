@@ -1,7 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url(../images/qbkls.png);
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
+    /* margin-bottom:160px; */
+    position: relative;
+    margin: 0 0;
+}
+
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #777777;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+a:active {
+    text-decoration: uderline;
+}
+
+a:hover {
+    background: #59ccc6;
+    display: inline-block;
 }
 
 header {
@@ -9,41 +35,57 @@ header {
     border-bottom-width: 5px;
     border-color: #cccccc;
     background-color: white;
-    height: 60px;
+    height: 65px;
     width: 100%;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 nav {
     float: right;
     padding-top: 20px;
-    margin-right: 10px;
+    margin-right: 15%;
+    color: #777777;
 }
 
 footer {
     background-color: #666666;
     text-align: center;
-    height: 20px;
-    border-width:0px;
-    border-style: none;
+    height: 75px;
+    width: 100%;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
     border-top-width: 10px;
     border-style: solid;
     border-color: #4aaaa5;
     padding-top: 40px;
     color: white;
-    clear: both;
+    /* clear: both; */
+    bottom: 0px;
+    position: sticky;
 }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:#4aaaa5;
 }
+#container {
+    position: relative;
+    clear:both;
+    /* left: 15%; */
+    max-width: 960px;
+    margin: 0 auto;
+}
 
 section {
+    position: relative;
+    min-height: 500px;
+    max-height: 800px;
+    max-width: 960;
     padding: 10px;
     border-width: 1px;
     border-style: solid;
-    border-color: #cccccc;
+    border-color: #dddddd;
     background-color: white;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -63,60 +105,82 @@ button {
     font-size: 15px;
 }
 
+button:hover {
+    background-color: #59ccc6;
+}
+
+
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+}
+
+
 .box {
-    border-style: solid;
-    border-color: black;
     width: 200px;
     height: 200px;
+    margin: 10px;
     background: blue;
+    z-index: 1;
+    position: relative;
+    float: left;
+
 }
 
 .label {
+    z-index: 2;
+    color: white;
     width: 100%;
-    height: 25%;
-    background: green;
+    height: 60px;
+    position: relative;
+    top:120px;
+    background: #4aaaa5;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 18px;
 
 }
 
 .box1 {
-    position: relative;
-    float: left;
+    background-image: url(https://placehold.it/200x200);
 }
 
 .box2 {
-    position: relative;
-    float: left;
+    background-image: url(https://placehold.it/200x200);
+
 }
 
 .box3 {
-    position: relative;
-    float: left;
+    background-image: url(https://placehold.it/200x200);
+
 }
 
 .box4 {
-    position: relative;
-    float: left;
+    background-image: url(https://placehold.it/200x200);
+
+}
+
+.box5 {
+    background-image: url(https://placehold.it/200x200);
+
 }
 
 #logo {
-    float: left;
     background-color: #4aaaa5;
     color: white;
-    width: 150px;
-    height: 20px;
+    width: 205px;
+    height: 60px;
     padding: 20px;
     position: relative;
-    left: 50px;
+    left: 18%;
+    float: left;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
 
-#container {
-    clear:both;
-    width: 960px;
-    margin: 0 auto;
-}
+
 
 #myPic {
     width: 150px;
